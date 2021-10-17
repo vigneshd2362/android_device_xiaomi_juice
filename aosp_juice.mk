@@ -8,7 +8,7 @@ $(call inherit-product, device/xiaomi/juice/device.mk)
 
 # Inherit some common Arcane OS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_INCLUDE_LIVdE_WALLPAPERS := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_BLUR := true
