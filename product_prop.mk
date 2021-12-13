@@ -14,6 +14,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.hwui.renderer=opengl \
+    debug.egl.hw=1 \
+    debug.egl.force_msaa=1 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1 \
