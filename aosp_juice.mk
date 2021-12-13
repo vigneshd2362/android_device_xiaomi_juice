@@ -6,22 +6,22 @@
 
 $(call inherit-product, device/xiaomi/juice/device.mk)
 
-# Inherit some common Arcane OS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Project Arcana stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_BLUR := true
 TARGET_GAPPS_ARCH := arm64
-BUILD_TYPE_IS_OFFICIAL := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Arcane Official
-ARCANE_OFFICIAL := true
-ARCANE_DEVICE := juice
-ARCANE_MAINTAINER := Don Joaquin
+# Project Arcana Official
+ARCANA_OFFICIAL := true
+ARCANA_DEVICE := juice
+ARCANA_MAINTAINER := Don Joaquin
+WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_juice
