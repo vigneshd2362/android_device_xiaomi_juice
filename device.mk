@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
+    init.performance_level.rc \
     init.target.rc
 
 # Input
