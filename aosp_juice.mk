@@ -20,8 +20,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Project Arcana Official
 ARCANA_OFFICIAL := true
 ARCANA_DEVICE := juice
-ARCANA_MAINTAINER := Don Joaquin
-WITH_GAPPS := true
+ARCANA_MAINTAINER := Don.Joaquin
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_juice
