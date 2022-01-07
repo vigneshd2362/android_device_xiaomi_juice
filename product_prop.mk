@@ -20,6 +20,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=0 \
     debug.sf.disable_backpressure=1 \
+    debug.sf.enable_hwc_vds=0 \
     debug.sdm.support_writeback=0 \
     debug.enable.sglscale=1 \
     debug.mdpcomp.logs=0 \
