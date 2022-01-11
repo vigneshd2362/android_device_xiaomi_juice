@@ -43,7 +43,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Always use GPU for screen compositing
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.disable_hwc_overlays=1
+    debug.sf.enable_hwc_overlays=1
 
 # Power-saving props
 PRODUCT_PROPERTY_OVERRIDES += \
