@@ -81,22 +81,11 @@ void set_device_props(const std::string brand, const std::string device, const s
 
 void load_device_properties() {
     std::string hwname = GetProperty("ro.boot.product.hardware.sku", "");
-    std::string region = GetProperty("ro.boot.hwc", "");
 
     if (hwname == "lime") {
-        if (region == "Global") {
-            set_device_props(
-                    "Redmi", "lime", "M2010J19SG", "lime_global", "Redmi 9T");
-		     property_override("ro.product.mod_device", "lime_global");
-        } else if (region == "India") {
-            set_device_props(
-                    "Redmi", "lime", "M2010J19SI", "lime", "Redmi 9 Power");
-                    property_override("ro.product.mod_device", "lime");
-        } else if (region == "CN") {
-            set_device_props(
-                    "Redmi", "lime", "M2010J19SC", "lime", "Redmi Note 9 4G");
-                    property_override("ro.product.mod_device", "lime");
-        }
+        set_device_props(
+                "Redmi", "lime", "M2010J19SG", "lime_global", "Redmi 9T");
+                property_override("ro.product.mod_device", "lime_global");
     } else if (hwname == "lemon") {
         set_device_props(
                 "Redmi", "lemon", "M2010J19SY", "lemon_global", "Redmi 9T NFC");
