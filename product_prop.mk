@@ -14,9 +14,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=0 \
     debug.sf.disable_backpressure=1 \
-    debug.sf.enable_hwc_vds=0 \
+    debug.sf.disable_hwc_overlays=1 \
+    debug.sf.enable_hwc_vds=0
     debug.sdm.support_writeback=0 \
     debug.enable.sglscale=1 \
+    debug.egl.hw=1 \
+    debug.egl.force.msaa=1 \
     debug.mdpcomp.logs=0 \
     debug.sf.recomputecrop=0 \
     vendor.display.disable_rotator_downscale=1 \
@@ -25,7 +28,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.has_wide_color_display=false \
     ro.hardware.egl=adreno \
     ro.hardware.vulkan=adreno
-
+    
 # IORap
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native_boot.iorap_readahead_enable=true
@@ -34,10 +37,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=15 \
     vendor.audio.offload.buffer.size.kb=256
-
-# Always use GPU for screen compositing
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_overlays=1
 
 # Power-saving props
 PRODUCT_PROPERTY_OVERRIDES += \
